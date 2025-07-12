@@ -1,11 +1,6 @@
 <template>
   <div id="login-box">
-    <div id="background-wrap" v-if="!settingStore.settings.background">
-      <div class="x1 cloud"></div>
-      <div class="x2 cloud"></div>
-      <div class="x3 cloud"></div>
-      <div class="x4 cloud"></div>
-      <div class="x5 cloud"></div>
+    <div id="background-wrap" v-if="!settingStore.settings.background" style="background-image: url('./b.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     </div>
     <div v-else :style="background"></div>
     <div class="form-wrapper">
