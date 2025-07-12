@@ -51,7 +51,14 @@
                       />
 
                     </el-tooltip>
-            
+                    <el-tooltip v-if="item.status ===  1"
+                                effect="dark"
+                                content="已发送"
+                    >
+                      <Icon icon="bi:send-arrow-up-fill" style="color: #67C23A" width="20" height="20"
+                      />
+
+                    </el-tooltip>
                     <el-tooltip v-if="item.status ===  2"
                                 effect="dark"
                                 content="发送成功"
