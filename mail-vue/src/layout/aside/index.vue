@@ -11,11 +11,6 @@
           <Icon icon="hugeicons:mailbox-01" width="20" height="20" />
           <span class="menu-name" style="margin-left: 21px">收件箱</span>
         </el-menu-item>
-        <el-menu-item @click="router.push({name: 'send'})" index="send"
-                      :class="route.meta.name === 'send' ? 'choose-item' : ''">
-          <Icon icon="cil:send" width="20" height="20" />
-          <span class="menu-name" style="margin-left: 21px">已发送</span>
-        </el-menu-item>
         <el-menu-item @click="router.push({name: 'star'})" index="star"
                       :class="route.meta.name === 'star' ? 'choose-item' : ''">
           <Icon icon="solar:star-line-duotone" width="20" height="20" />
